@@ -16,7 +16,7 @@ int main() {
     double PIB;
     char nome[20];
 
-
+    //Cadastro 1
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
@@ -51,6 +51,38 @@ int main() {
     printf("Nome da cidade: %s \n", nome );
 
 
-    return 0;
-}
+    //2cadastro
+    printf("\nsegundo cadastro de carta\n");
 
+
+    printf("\nDigite o codigo_da_cidade:\n");
+    scanf("%d", &codigo_da_cidade);
+
+    printf("digite a populacao:\n");
+    scanf ("%lf", &populacao);
+    
+    printf("digite area:\n");
+    scanf("%lf", &area);
+
+    printf("digite o numero de pontos turisticos:\n");
+    scanf("%d", &numero_de_pontos_turisticos);
+     
+    printf("digite o pib da cidade:\n");
+    scanf("%lf", &PIB);        
+     
+    printf("digite o nome da cidade:\n");
+    scanf(" %[^\n]", nome);
+
+
+    printf("\n---- DADOS DA CIDADE ----\n");
+
+    printf("o codigo da cidade é: %d \n", codigo_da_cidade);
+    printf("a polpulaçao: %.2lf habitantes\n", populacao);
+    printf("area de %.2lf km²\n", area);
+    printf("numero de pontos turisticos: %d \n", numero_de_pontos_turisticos);
+    printf("PIB: R$ %.2lf bilhões\n", PIB);
+    printf("Nome da cidade: %s \n", nome );
+
+    return 0;
+
+}
